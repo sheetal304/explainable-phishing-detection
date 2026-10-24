@@ -60,3 +60,13 @@ The Phishing Websites dataset was created by Rami Mustafa A Mohammad, Lee McClus
 
 Reference paper:
 Mohammad, R., McCluskey, T.L. and Thabtah, F. (2012) An Assessment of Features Related to Phishing Websites using an Automated Technique. International Conference for Internet Technology and Secured Transactions (ICITST 2012), IEEE, London, UK, pp. 492-497.
+
+### Cross-validation
+5-fold stratified cross-validation on the training set (accuracy, mean ± standard deviation):
+
+| Model | CV accuracy |
+|---|---|
+| Logistic Regression | 0.928 ± 0.003 |
+| Random Forest | 0.969 ± 0.001 |
+
+Random Forest outperformed Logistic Regression in every fold.

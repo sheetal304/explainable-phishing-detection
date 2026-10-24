@@ -47,6 +47,10 @@ Among phishing websites in the test set, those with SSLfinal_State = 1 were miss
 - The error analysis only examined SSLfinal_State.
 
 ## Files
+## How to run
+1. Open `phishing_detection.ipynb` in Google Colab (upload the file at colab.research.google.com), or run it locally with Jupyter.
+2. If running locally, install the dependencies first: `pip install -r requirements.txt`
+3. Run all cells from top to bottom. The dataset is downloaded automatically from OpenML, so an internet connection is needed.
 - `phishing_detection.ipynb`: notebook with all code and outputs, including cross-validation
 - `rf_confusion_matrix.png`, `shap_summary.png`: result figures
 

@@ -40,7 +40,7 @@ Random Forest confusion matrix (test set): 942 phishing correctly detected, 38 p
 Among phishing websites in the test set, those with SSLfinal_State = 1 were missed more often (26 of 146) than those with SSLfinal_State = -1 (12 of 597). This suggests the model relies heavily on SSL status.
 
 ## Limitations
-- Results come from a single train-test split, so differences between models may vary on other splits.
+- The final test results come from a single train-test split; cross-validation was run on the training set only, and no separate validation on independent data was done.
 - The dataset contains pre-computed features, so this model cannot analyze an arbitrary URL without a matching feature-extraction system.
 - Feature importance and SHAP show what the model relied on, not what causes phishing.
 - SHAP was computed on a 300-website sample, not the full test set.

@@ -53,3 +53,10 @@ Among phishing websites in the test set, those with SSLfinal_State = 1 were miss
 
 ## Conclusion
 On this test split, Random Forest (accuracy 0.974) performed better than Logistic Regression (accuracy 0.929). Random Forest relied most on SSLfinal_State and URL_of_Anchor, and it missed more phishing websites that had a good SSL status. Since all results come from a single split and pre-computed features, these findings are preliminary and would need cross-validation and a feature extractor to test on real URLs.
+
+
+## Dataset source
+The Phishing Websites dataset was created by Rami Mustafa A Mohammad, Lee McCluskey and Fadi Thabtah, and is available from the UCI Machine Learning Repository. This project loaded it through OpenML (data_id=4534).
+
+Reference paper:
+Mohammad, R., McCluskey, T.L. and Thabtah, F. (2012) An Assessment of Features Related to Phishing Websites using an Automated Technique. International Conference for Internet Technology and Secured Transactions (ICITST 2012), IEEE, London, UK, pp. 492-497.

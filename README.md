@@ -52,7 +52,7 @@ Among phishing websites in the test set, those with SSLfinal_State = 1 were miss
 
 
 ## Conclusion
-On this test split, Random Forest (accuracy 0.974) performed better than Logistic Regression (accuracy 0.929). Random Forest relied most on SSLfinal_State and URL_of_Anchor, and it missed more phishing websites that had a good SSL status. Since all results come from a single split and pre-computed features, these findings are preliminary and would need cross-validation and a feature extractor to test on real URLs.
+On this test split, Random Forest (accuracy 0.974) performed better than Logistic Regression (accuracy 0.929). Five-fold stratified cross-validation on the training set gave the same ranking (Random Forest 0.969 ± 0.001, Logistic Regression 0.928 ± 0.003). Random Forest relied most on SSLfinal_State and URL_of_Anchor, and it missed more phishing websites that had a good SSL status. Since the dataset contains pre-computed features from an older benchmark, these findings are preliminary, and a feature extractor and newer independent data would be needed to test on real URLs.
 
 
 ## Dataset source

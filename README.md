@@ -47,7 +47,7 @@ Among phishing websites in the test set, those with SSLfinal_State = 1 were miss
 - The error analysis only examined SSLfinal_State.
 
 ## Files
-- `Untitled0.ipynb`: notebook with all code and outputs
+- `phishing_detection.ipynb`: notebook with all code and outputs, including cross-validation
 - `rf_confusion_matrix.png`, `shap_summary.png`: result figures
 
 
